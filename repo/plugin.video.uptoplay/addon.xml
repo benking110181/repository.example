@@ -1,1 +1,28 @@
-
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.uptoplay" name="plugin.video.uptoplay" version="0.1" provider-name="cokodico">
+  <requires>
+    <trycatch>
+      <try>
+          <import addon="xbmc.python" version="3.0.0"/>
+      </try>
+      <catch>
+          <import addon="xbmc.python" version="2.25.0"/>
+      </catch>
+        </trycatch>
+    <import addon="script.module.requests" version="2.12.4"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="service.py" >
+  <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="fr">plugin.video.uptoplay</summary>
+    <description lang="fr">plugin.video.uptoplay permet d'importer une base de contenu en 1 clic . Necessite un compte premium Uptobox ou Alldebrid</description>
+    <disclaimer lang="fr"></disclaimer>
+    <platform>all</platform>
+    <license>MIT License</license>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
